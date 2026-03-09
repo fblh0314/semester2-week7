@@ -1,0 +1,3 @@
+When I compiled and then ran the crash.c program I observed that the print statement ran printing done and then it output that stack smashing was detected and the program terminated and I believe this is because the program writes 100 elements into an array which is only 10 elements which causes the system to detect this issue and terminate the program to avoid further damage.
+
+When I ran the crash.py program, upon interpretation the program ran into errors since the program is trying to assign values to indices 0 through 99 in a list that only has 10 elements:

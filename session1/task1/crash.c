@@ -2,9 +2,9 @@
 
 #include <stdio.h>
 
-void assign_values(int x[])
+void assign_values(int x[], int size)
 {
-    for (int i = 0; i < 100; ++i) {
+    for (int i = 0; i < size; ++i) {
         x[i] = (i + 1) * (i + 1);
     }
 }
@@ -12,9 +12,8 @@ void assign_values(int x[])
 int main(void)
 {
     int data[10] = { 0 };
-
-    assign_values(data);
+    assign_values(data, 10);
     printf("Done!\n");
-
     return 0;
 }
+
